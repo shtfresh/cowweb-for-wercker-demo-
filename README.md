@@ -1,7 +1,6 @@
 COWWEB
 ======
 Cosay Web API.
-
 ```
 $ curl "http://localhost:8080/cowsay/say?message=Hello%20cowweb"
  ______________
