@@ -45,7 +45,7 @@ push-to-releases:
         #repository: iad.ocir.io/gse00014510/acme-web-app/cowweb
          repository: phx.ocir.io/apaccpt01/hack10-registry/cowweb
         tag: v1.0
-        ports: 8080
+        ports: 8081
         cmd: java -jar /pipeline/source/build/libs/cowweb-1.0.jar
 
 deploy-to-cluster:
