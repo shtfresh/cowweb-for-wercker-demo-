@@ -53,7 +53,7 @@ public class CowsayController {
     @RequestMapping("/think")
     public String think(@RequestParam(required = false) Optional<String> think) {
         Optional<String> env = think.map(t -> System.getenv(t));
-        return Cowsay.think(new String[]{"-f", getRandomCowfile(), env.orElse(think.orElse("Moo!"))});
+        return Cowsay.think(new String[]{"-f", getRandomCowfile(), env.orElse(think.orElse("Test!"))});
     }
 
     private static String getRandomCowfile() {
