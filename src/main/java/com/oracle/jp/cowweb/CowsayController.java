@@ -42,7 +42,7 @@ public class CowsayController {
     @RequestMapping("/say")
     public String say(@RequestParam(required = false) Optional<String> say) {
         Optional<String> env = say.map(s -> System.getenv(s));
-        return Cowsay.say(new String[]{"-f", getRandomCowfile(), env.orElse(say.orElse("Moo!"))});
+        return Cowsay.say(new String[]{"-f", getRandomCowfile(), env.orElse(say.orElse("Test!"))});
     }
 
     /**
